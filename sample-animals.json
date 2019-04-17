@@ -1,0 +1,6 @@
+{ "animals": [{
+  "species": "Squirrel",
+  "notes": "They're omnivores!",
+  "id": "1"
+  }]
+}

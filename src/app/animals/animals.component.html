@@ -1,0 +1,7 @@
+<h2>Posts: </h2>
+
+<div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{animal.species}}</em></h3>
+  </div>
+</div>

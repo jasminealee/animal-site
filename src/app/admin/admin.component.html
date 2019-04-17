@@ -1,0 +1,15 @@
+<h3>Add New Animal to the List!</h3>
+<div>
+  <div>
+    <label>Species:</label>
+    <br>
+    <input #newSpecies>
+  </div>
+
+  <div>
+    <label>Notes: </label>
+    <br>
+    <textarea #newNotes></textarea>
+  </div>
+    <button (click)="submitForm(newSpecies.value, newNotes.value); newSpecies.value=''; newSpecies.value=''">Add</button>
+</div>
