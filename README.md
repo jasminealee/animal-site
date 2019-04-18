@@ -1,3 +1,7 @@
+|<img src="https://github.com/identicons/jasminealee.png" width=100 alt="GitHub identicon for author jasminealee">|
+|:-----:|
+| [**jasminealee**](https://github.com/jasminealee ) |
+
 # Animal Website
 
 ### Two week (weeks 12 and 13) Independent Project in Angular 4/5/19
@@ -7,13 +11,32 @@
 ## Description
 A website that allows a user to input a species and note about that species.
 
+## Hosting Link
+https://animal-site.firebaseapp.com
+
 ## Specs
-Current Functions
-|---|:---:|:---:|
-|Click the link "Animal" in the tope left corner.| Click "animal" | Redirects page to animals url.|
-|On the animals url page, click on a species listed | Click "dog" | Redirects to animal/:id url |
+Current Functions:
+
+| Behavior| Input | Output|
+|----------|:-----:|:------:|
+| Click the link "Animal" in the top left corner.| Click "animal" | Redirects page to animals url.|
+| On the animals url page, click on a species listed. | Click "dog" | Redirects page to animal/:id url. |
 | Click on admin in the top left hand corner | Click "Admin"| Redirects page to admin url. |
-| On Admin's page, input species name in species input box and input box and notes in text area box. Then click "Add"| "Dog" ; "They're loyal."| |
+| On Admin's page, input species name in species input box and notes in text area box. Then click "Add". | "Dog" ; "They're very loyal."| In the firebase, the new inputted information is saved. On the website, the page will immediately redirect the user to the animals url with the new updated animals list.|
+| Click on the link "Welcome" in the upper left corner. | Click "Welcome" | Page redirects to the welcome url.|
+
+
+Future Functions:
+
+| Behavior| Input | Output|
+|----------|:-----:|:------:|
+|Click the "Login" link in the upper right corner. | Click "login" | Page redirects to login url.|
+|Input gmail address and password. Then click "Sign-In". | "****@gmail.com"; *****; Click "Sign-In" | Page redirects to homepage with inputted login credentials. The user icon in the upper left corner appears as user's gmail icon. |
+| Input information to search for in the search bar in the top right corner. | "Dog" | Page redirects to search url listing all links that contain "dog" in the content. |
+| On Admin page, click "Delete". | Click "Delete" | Page redirects to delete url. There is a popup that says "are you sure you want to delete this post?" |
+| On the delete url page click "yes" | Click "Yes" | Page redirects user to the updated animals url page. |
+| On the Admin page, click "Edit" in the middle section beneath the notes text area. | Click "Edit" | Page redirects user to edit url.|
+
 ## Setup/Installation Requirements
 * Download Angular and Node Package Manger and install them.
 * In the src/app folder create a file called api-keys
@@ -44,16 +67,27 @@ export const masterFirebaseConfig = {
 None
 
 ## Technologies Used
+* HTML
 * Terminal
 * Atom
 * JavaScript
 * TypeScript
 * Angular
+* CSS
+* Firebase
+* Jasmine
+* Karma
+
+## Support and contact details
+If you have any questions or concerns please contact me at: [jasmine.al1722@gmail.com](mailto:jasmine.al1722@gmail.com)
 
 ## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2019 Jasmine Lee. All Rights Reserved.
+
+Copyright (c) 2019 [Jasmine Lee](https://github.com/jasminealee)
 
 
-## animal-site.solution
+## Animal-Site.Solution
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
