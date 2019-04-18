@@ -1,4 +1,6 @@
-# Chatapp
+# Animal Website
+
+### Two week (weeks 12 and 13) Independent Project in Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
