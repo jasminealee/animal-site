@@ -9,3 +9,8 @@
 body {
   background-color: lightgrey;
 }
+
+.welcome {
+  text-decoration: underline;
+  text-align: center;
+}

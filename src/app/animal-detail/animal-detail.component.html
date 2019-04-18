@@ -1,8 +1,5 @@
+<br>
 <div>
-  <h3>{{(animalToDisplay | async)?.species}}</h3>
-  <h4>{{(animalToDisplay | async)?.notes}}</h4>
-</div>
-
-<div>
-  <a href="/animals">Animals</a>
+  <h3><em>Animal: {{(animalToDisplay | async)?.species}}</em></h3>
+  <h4>Note: {{(animalToDisplay | async)?.notes}}</h4>
 </div>

@@ -1,7 +1,10 @@
-<h2>Posts: </h2>
+<br>
+<h3>Click on an animal to find out more information about them: </h3>
 
 <div *ngFor="let animal of animals | async" (click)="goToDetailPage(animal)" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{animal.species}}</em></h3>
+    <ul>
+      <li><em>{{animal.species}}</em></li>
+    </ul>
   </div>
 </div>
