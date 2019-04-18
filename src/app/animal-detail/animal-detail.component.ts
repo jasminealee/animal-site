@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Animal } from '../animal.model';
 import { AnimalService } from '../animal.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -14,23 +15,23 @@ import { AnimalService } from '../animal.service';
 })
 
 export class AnimalDetailComponent implements OnInit {
-  animalId;
+  animalId: number;
   animalToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private animalService: AnimalService) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.animalId = parseInt(urlParameters['id']);
+     this.animalId = urlParameters['id'];
    });
-    this.animalService.getAnimalById(this.animalId).subscribe(dataLastEmittedFromObserver => {
-      this.animalToDisplay = new Animal(dataLastEmittedFromObserver.species,
-                                      dataLastEmittedFromObserver.notes)
-                                      console.log(this.animalToDisplay);
-    })
- }
+    this.animalToDisplay = this.animalService.getAnimalById(this.animalId);
+ //    this.animalService.getAnimalById(this.animalId).subscribe(dataLastEmittedFromObserver => {
+ //      this.animalId = urlParameters['id'];
+ //    })
+ // }
   // submitForm(species: string, notes: string) {
   //   var newAnimal: Animal = new Animal(species, notes);
   //   this.animalService.addAnimal(newAnimal);
   // }
+  }
 }

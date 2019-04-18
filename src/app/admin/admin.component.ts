@@ -18,6 +18,8 @@ export class AdminComponent implements OnInit {
 
   submitForm(species: string, notes: string) {
     var newAnimal: Animal = new Animal(species, notes);
+    this.animalService.addAnimal(newAnimal);
+    
     console.log(newAnimal);
   }
 

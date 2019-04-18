@@ -7,6 +7,8 @@ import { AdminComponent }   from './admin/admin.component';
 
 
 
+
+
 const appRoutes: Routes = [
   {
     path: '',
@@ -23,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'admin/animals',
+    component: AnimalsComponent
   }
 ];
 

@@ -11,8 +11,9 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [AnimalService]
 })
 export class AnimalsComponent implements OnInit {
-  // animals: Animal[];
   animals: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private animalService: AnimalService){}
 
 
@@ -20,7 +21,7 @@ export class AnimalsComponent implements OnInit {
     this.animals = this.animalService.getAnimals();
   }
 
-  goToDetailPage(clickedAnimal: Animal) {
+  goToDetailPage(clickedAnimal) {
    this.router.navigate(['animals', clickedAnimal.$key]);
  };
 

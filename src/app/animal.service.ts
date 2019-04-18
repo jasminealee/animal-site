@@ -16,10 +16,12 @@ export class AnimalService {
   }
 
   addAnimal(newAnimal: Animal) {
+  console.log(newAnimal);
   this.animals.push(newAnimal);
   }
 
   getAnimalById(animalId: number){
+    return this.database.object('animals/' + animalId);
    // for (var i = 0; i <= ANIMALS.length - 1; i++) {
    //   if (ANIMALS[i].id === animalId) {
    //     return ANIMALS[i];
