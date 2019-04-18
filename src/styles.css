@@ -14,3 +14,9 @@ body {
   text-decoration: underline;
   text-align: center;
 }
+
+#squirrel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
