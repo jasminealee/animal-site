@@ -14,14 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AdminComponent } from './admin/admin.component';
-// export const firebaseConfig = {
-//     apiKey: "AIzaSyDagauKsgzFwCwSkeARbO9fEWQ48LYA5Zo",
-//     authDomain: "chatapp-872df.firebaseapp.com",
-//     databaseURL: "https://chatapp-872df.firebaseio.com",
-//     projectId: "chatapp-872df",
-//     storageBucket: "",
-//     messagingSenderId: "201357493249"
-//   };
+
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
